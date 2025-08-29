@@ -8,4 +8,6 @@ interface TopicMasteryRepository : JpaRepository<TopicMastery, Long> {
 
     fun findByProfileAndTopicId(profile: StudentProfile, topicId: Long): TopicMastery?
 
+    fun findByProfileAndTopicIdIn(profile: StudentProfile, topicIds: List<Long>): List<TopicMastery>
+
 }

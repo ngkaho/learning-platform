@@ -18,8 +18,6 @@ spring:
     database-platform: org.hibernate.dialect.H2Dialect
   flyway:
     enabled: true
-xai:
-  api-key: mask # Set in environment or .env file
 
 api:
   student-question-history:
